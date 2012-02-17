@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Message Blocaks</title>
+
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+		<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+
+	<!-- <script type="text/javascript"> -->
+
+	<!-- $( function() { -->
+
+		<!-- $('#searchButton').click(function() { -->
+        <!-- $.getJSON('http://staging.glocal.com/mobile/videos.json', -->
+        <!-- function(data) { -->
+              <!-- var SomeData_list = document.getElementById("list"); -->
+            <!-- for (var i=0; i < data.length; i+=1) { -->
+              <!-- SomeData_list.innerHTML += '<li data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li-has-thumb ui-btn-up-c"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="index.html" class="ui-link-inherit"><img src= "http://glcl-images-dev.s3.amazon.com/761_s.png" class="ui-li-thumb"><h3 class="ui-li-heading">{data[i].title}</h3><p class="ui-li-desc">Phoenix</p></a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>' -->
+            <!-- } -->
+
+
+          <!-- list.listview("destroy").listview() -->
+
+			<!-- }); -->
+
+		<!-- }); -->
+
+        <!-- document.addEventListener("deviceready", onDeviceReady, false); -->
+
+	<!-- } ); -->
+
+
+    <!-- // PhoneGap is loaded and it is now safe to make calls PhoneGap methods -->
+    <!-- // -->
+    <!-- function onDeviceReady() { -->
+
+    <!-- } -->
+
+<!-- </script> -->
+
+</head>
+<body>
+
+    <div data-role="page" id="home">
+
+  <div data-role="header">
+    <h1>AlternativeTo Home</h1>
+  </div>
+
+  <div data-role="content">
+    <p>Find Alternatives To Your favourite Softwares </p>
+    <p><a href="#search" data-role="button">Search Alternatives</a></p>
+    <p><a href="#recent" data-role="button">Recent Alternatives</a></p>
+  </div>
+
+</div>
+
+<div data-role="page" id="search">
+
+  <div data-role="header" data-position="fixed">
+    <h1>Videos</h1>
+    <div class="ui-body ui-body-b">
+         <button type="submit" data-theme="a" id="searchButton">Load Videos</button>
+
+    </div>
+  </div>
+
+  <div data-role="content">
+
+     <ul data-role="listview" id="list">
+			 <li data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li-has-thumb ui-btn-up-c">
+				 <div class="ui-btn-inner ui-li">
+					 <div class="ui-btn-text">
+						 <a href="index.html" class="ui-link-inherit">
+							 <img src= "http://placekitten.com/200/300" class="ui-li-thumb">
+							 <h3 class="ui-li-heading">Some heading</h3>
+							 <p class="ui-li-desc">Phoenix</p>
+						</a>
+					</div>
+					<span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span>
+				</div>
+			</li>
+						 <li data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li-has-thumb ui-btn-up-c">
+				 <div class="ui-btn-inner ui-li">
+					 <div class="ui-btn-text">
+						 <a href="index.html" class="ui-link-inherit">
+							 <img src= "http://placekitten.com/200/300" class="ui-li-thumb">
+							 <h3 class="ui-li-heading">Some heading</h3>
+							 <p class="ui-li-desc">Phoenix</p>
+						</a>
+					</div>
+					<span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span>
+				</div>
+			</li>
+			 <li data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li-has-thumb ui-btn-up-c">
+				 <div class="ui-btn-inner ui-li">
+					 <div class="ui-btn-text">
+						 <a href="index.html" class="ui-link-inherit">
+							 <img src= "http://placekitten.com/200/300" class="ui-li-thumb">
+							 <h3 class="ui-li-heading">Some heading</h3>
+							 <p class="ui-li-desc">Phoenix</p>
+						</a>
+					</div>
+					<span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span>
+				</div>
+			</li>
+
+    </ul>
+  </div>
+
+</div>
+
+<div data-role="page" id="recent">
+
+  <div data-role="header">
+    <h1> Recent Alternatives</h1>
+  </div>
+
+  <div data-role="content">
+    <p>This app rocks!</p>
+
+  </div>
+
+</div>
+
+</body>
+</html>
+
